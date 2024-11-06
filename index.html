@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>3D Text Editor</title>  
+    <style>  
+        * {  
+            margin: 0;  
+            padding: 0;  
+            box-sizing: border-box;  
+        }  
+
+        body {  
+            overflow: hidden;  
+            background-color: #1a1a1a;  
+        }  
+
+        #scene-container {  
+            position: fixed;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+        }  
+
+        #loading {  
+            position: fixed;  
+            top: 50%;  
+            left: 50%;  
+            transform: translate(-50%, -50%);  
+            color: white;  
+            text-align: center;  
+            z-index: 1000;  
+        }  
+
+        .spinner {  
+            width: 50px;  
+            height: 50px;  
+            border: 5px solid #f3f3f3;  
+            border-top: 5px solid #3498db;  
+            border-radius: 50%;  
+            animation: spin 1s linear infinite;  
+            margin: 0 auto 20px;  
+        }  
+
+        @keyframes spin {  
+            0% { transform: rotate(0deg); }  
+            100% { transform: rotate(360deg); }  
+        }  
+
+        #error-message {  
+            position: fixed;  
+            top: 50%;  
+            left: 50%;  
+            transform: translate(-50%, -50%);  
+            background-color: #ff4444;  
+            color: white;  
+            padding: 20px;  
+            border-radius: 5px;  
+            z-index: 1000;  
+        }  
+
+        .control-group {  
+            margin: 10px 0;  
+            padding: 10px;  
+            border: 1px solid #ccc;  
+            border-radius: 4px;  
+        }  
+
+        .control-group label {  
+            display: block;  
+            margin-bottom: 5px;  
+            color: white;  
+        }  
+
+        .control-group input[type="range"] {  
+            width: 100%;  
+        }  
+
+        .control-group button {  
+            margin: 5px;  
+            padding: 5px 10px;  
+            background-color: #4CAF50;  
+            color: white;  
+            border: none;  
+            border-radius: 4px;  
+            cursor: pointer;  
+        }  
+
+        .control-group button:hover {  
+            background-color: #45a049;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div id="scene-container"></div>  
+    <div id="loading">  
+        <div class="spinner"></div>  
+        <div class="loading-text">Loading...</div>  
+    </div>  
+    <div id="error-message" style="display: none;">  
+        <p>An error occurred. Please refresh the page.</p>  
+    </div>  
+    <script type="module" src="/src/main.js"></script>  
+</body>  
+</html>

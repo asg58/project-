@@ -1,0 +1,1 @@
+// AnimationTypes.js - placeholder file

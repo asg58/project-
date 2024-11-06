@@ -1,0 +1,1 @@
+// PropertyPanel.js - placeholder file

@@ -1,0 +1,1 @@
+// EffectsManager.js - placeholder file

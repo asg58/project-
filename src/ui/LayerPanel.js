@@ -1,0 +1,1 @@
+// LayerPanel.js - placeholder file

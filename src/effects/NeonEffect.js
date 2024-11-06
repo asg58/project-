@@ -1,0 +1,1 @@
+// NeonEffect.js - placeholder file

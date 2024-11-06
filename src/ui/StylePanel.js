@@ -1,0 +1,1 @@
+// StylePanel.js - placeholder file

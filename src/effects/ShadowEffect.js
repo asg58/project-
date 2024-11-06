@@ -1,0 +1,1 @@
+// ShadowEffect.js - placeholder file
